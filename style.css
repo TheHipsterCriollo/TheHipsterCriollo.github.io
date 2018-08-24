@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+body h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 800;
+}
+
+body h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+}
+
+body div {
+  margin: 0;
+}
+
+header {
+  height: 50px;
+}
+
+header #logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50px;
+  background: yellow;
+}
+
+header nav {
+  position: relative;
+  left: calc((100vw / 2) - 305px);
+  width: 610px;
+}
+
+header nav ul {
+  margin: 0;
+  position: relative;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+}
+
+header nav ul li a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px;
+  color: red;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+  background: salmon;
+}
+
+#landing {
+  width: 100%;
+  height: calc(100vh - 175px);
+  position: relative;
+  background: darkcyan;
+}
+
+.landingFoot {
+  position: absolute;
+  bottom: 10px;
+  left: calc((100vw / 2) - 400px);
+  width: 800px;
+}
+
+.landingFoot h3 {
+  margin: 7px 0;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  background: cyan;
+  top: 100vh;
+  position: absolute;
+}
+
+#about h1 {
+  position: relative;
+  top: 100px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  left: 200px;
+}
+
+#about p {
+  position: relative;
+  top: calc((100vh / 2) - 107px);
+  width: 700px;
+  left: 650px;
+  text-align: center;
+}
+
+#skills {
+  height: 100vh;
+  background: plum;
+  position: absolute;
+  top: 200vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#skills .skill {
+  width: 350px;
+  height: 180px;
+  margin: 0 78px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+#skills .sk1 {
+  position: relative;
+  top: calc(100vh - 300px);
+}
+
+#skills .sk2 {
+  position: relative;
+  top: 100px;
+}
+
+#skills .sk3 {
+  position: relative;
+  top: calc(100vh - 300px);
+}
+
+#work {
+  height: 100vh;
+  width: 100%;
+  background: #739ea8;
+  position: absolute;
+  top: 300vh;
+}
+
+#work .text {
+  top: calc((100vh / 2) - 105px);
+  position: relative;
+  width: 700px;
+  height: 210px;
+  left: 150px;
+}
+
+#work .text h1 {
+  float: left;
+}
+
+#work .text h3 {
+  width: 650px;
+  height: auto;
+  text-align: center;
+  float: right;
+}
+
+#work .work {
+  background: #8b5e5e;
+  width: 100px;
+  height: 100px;
+}
+
+#work .wk1 {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+}
+
+#work .wk2 {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+}
+
+#work .wk3 {
+  position: absolute;
+  top: 100px;
+  left: 1050px;
+}
+
+#work .wk4 {
+  position: absolute;
+  top: 430px;
+  left: 125px;
+}
+
+#work .wk5 {
+  position: absolute;
+  top: 400px;
+  left: 1200px;
+}
+
+#work .wk6 {
+  position: absolute;
+  top: 520px;
+  left: 600px;
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  background: #7e5cb4;
+  position: absolute;
+  top: 400vh;
+}
+
+#modal .content {
+  height: auto;
+  width: 80vw;
+  background: #5cb460;
+  position: fixed;
+  top: 25px;
+  left: calc((100vw / 2) - 614px);
+  z-index: 3;
+}
+
+#modal .content #close {
+  position: relative;
+  left: calc(100% - 3%);
+  top: 10px;
+}
+
+#modal .content h1 {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+#modal .content .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+
+#modal .content .table .col {
+  margin: 0 50px;
+  width: 33%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+#modal .content .table .col h5 {
+  font-size: 1.5em;
+}
+
+#modal .content p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,236 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    h1 {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: 800;
+    }
+    h3 {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: 700;
+    }
+    div {
+        margin: 0;
+    }
+}
+
+header {
+    // background: blue;
+    height: 50px;
+    #logo {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 50px;
+        background: yellow;
+    }
+    nav {
+        position: relative;
+        left: calc((100vw / 2) - 305px);
+        width: 610px;
+        ul {
+            margin: 0;
+            position: relative;
+            li {
+                display: inline-block;
+                margin: 15px;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-weight: 400;
+                a {
+                    box-sizing: border-box;
+                    padding: 5px 10px;
+                    color: red;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: yellow;
+                    background: salmon;
+                }
+            }
+        }
+    }
+}
+
+#landing {
+    width: 100%;
+    height: calc(100vh - 175px);
+    position: relative;
+    background: darkcyan;
+}
+
+.landingFoot {
+    position: absolute;
+    bottom: 10px;
+    left: calc((100vw / 2) - 400px);
+    width: 800px;
+    h3 {
+        margin: 7px 0;
+    }
+}
+
+#about {
+    height: 100vh;
+    width: 100%;
+    background: cyan;
+    top: 100vh;
+    position: absolute;
+    h1 {
+        position: relative;
+        top: 100px;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        left: 200px;
+    }
+    p {
+        position: relative;
+        top: calc((100vh / 2) - 107px);
+        width: 700px;
+        left: 650px;
+        text-align: center;
+    }
+}
+
+#skills {
+    height: 100vh;
+    background: plum;
+    position: absolute;
+    top: 200vh;
+    display: flex;
+    .skill {
+        width: 350px;
+        height: 180px;
+        margin: 0 78px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .sk1 {
+        position: relative;
+        top: calc(100vh - 300px);
+    }
+    .sk2 {
+        position: relative;
+        top: 100px;
+    }
+    .sk3 {
+        position: relative;
+        top: calc(100vh - 300px);
+    }
+}
+
+#work {
+    height: 100vh;
+    width: 100%;
+    background: rgb(115, 158, 168);
+    position: absolute;
+    top: 300vh;
+    .text {
+        top: calc((100vh / 2) - 105px);
+        position: relative;
+        width: 700px;
+        height: 210px;
+        left: 150px;
+        h1 {
+            float: left;
+        }
+        h3 {
+            width: 650px;
+            height: auto;
+            text-align: center;
+            float: right;
+        }
+    }
+    .work {
+        background: rgb(139, 94, 94);
+        width: 100px;
+        height: 100px;
+    }
+    .wk1 {
+        position: absolute;
+        top: 80px;
+        left: 100px;
+    }
+    .wk2 {
+        position: absolute;
+        top: 200px;
+        left: 600px;
+    }
+    .wk3 {
+        position: absolute;
+        top: 100px;
+        left: 1050px;
+    }
+    .wk4 {
+        position: absolute;
+        top: 430px;
+        left: 125px;
+    }
+    .wk5 {
+        position: absolute;
+        top: 400px;
+        left: 1200px;
+    }
+    .wk6 {
+        position: absolute;
+        top: 520px;
+        left: 600px;
+    }
+}
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    background: rgb(126, 92, 180);
+    position: absolute;
+    top: 400vh;
+}
+
+#modal {
+    .content {
+        height: auto;
+        width: 80vw;
+        background: rgb(92, 180, 96);
+        position: fixed;
+        top: 25px;
+        left: calc((100vw / 2) - 614px);
+        z-index: 3;
+        #close {
+            position: relative;
+            left: calc(100% - 3%);
+            top: 10px;
+        }
+        h1 {
+            text-align: center;
+            width: 80%;
+            margin: 30px auto;
+        }
+        .table {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            .col {
+                margin: 0 50px;
+                width: 33%;
+                padding: 5px;
+                box-sizing: border-box;
+                text-align: center;
+                h5 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+        p {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
