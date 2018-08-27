@@ -99,7 +99,7 @@ const view = {
             workElem.className = `work wk${index}`;
             workElem.innerHTML = `
             <a href="">
-            <img src="source/userImg.png" alt="" width="100" height="100" />
+            <img src="${element.images[0]}" alt="" width="100" height="100" />
             </a>
             `;
             work.appendChild(workElem);
@@ -123,24 +123,20 @@ const view = {
             <h1>${projectReceive.title}</h1>
             <div class="table">
                 <div class="col">
-                    <h5>${projectReceive.client}</h5>
+                    <h5>Client: ${projectReceive.client}</h5>
                 </div>
                 <div class="col">
-                    <h5>${projectReceive.type}</h5>
+                    <h5>Type: ${projectReceive.type}</h5>
                 </div>
                 <div class="col">
-                    <h5>${projectReceive.date}</h5>
+                    <h5>Date: ${projectReceive.date}</h5>
                 </div>
             </div>
             <p>
             ${projectReceive.description}
             </p>
             <div class="image">
-                <img src="${projectReceive.images[0]}" alt="" width="500" height="500">
-                <img src="${projectReceive.images[1]}" alt="" width="500" height="500">
-                <img src="${projectReceive.images[2]}" alt="" width="500" height="500">
-                <img src="${projectReceive.images[3]}" alt="" width="500" height="500">
-                <img src="${projectReceive.images[4]}" alt="" width="500" height="500">
+                <img src="${projectReceive.images[1]}" alt="">
             </div>
         </div>
         `;

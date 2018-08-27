@@ -195,7 +195,7 @@ header {
     .content {
         height: auto;
         width: 80vw;
-        background: rgb(170, 247, 174);
+        background: white;
         position: fixed;
         top: 25px;
         left: calc((100vw / 2) - 614px);
@@ -235,8 +235,11 @@ header {
             margin: auto;
         }
         .image {
-            display: flex;
-            flex-grow: 2;
+            overflow-y: scroll;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

@@ -175,41 +175,39 @@ header nav ul li a:hover {
 
 #work .work {
   background: #8b5e5e;
-  width: 100px;
-  height: 100px;
 }
 
-#work .wk1 {
+#work .wk0 {
   position: absolute;
   top: 80px;
   left: 100px;
 }
 
-#work .wk2 {
+#work .wk1 {
   position: absolute;
   top: 200px;
   left: 600px;
 }
 
-#work .wk3 {
+#work .wk2 {
   position: absolute;
   top: 100px;
   left: 1050px;
 }
 
-#work .wk4 {
+#work .wk3 {
   position: absolute;
   top: 430px;
   left: 125px;
 }
 
-#work .wk5 {
+#work .wk4 {
   position: absolute;
   top: 400px;
   left: 1200px;
 }
 
-#work .wk6 {
+#work .wk5 {
   position: absolute;
   top: 520px;
   left: 600px;
@@ -226,11 +224,16 @@ header nav ul li a:hover {
 #modal .content {
   height: auto;
   width: 80vw;
-  background: #5cb460;
+  background: white;
   position: fixed;
   top: 25px;
   left: calc((100vw / 2) - 614px);
   z-index: 3;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll;
+  overflow: hidden;
 }
 
 #modal .content #close {
@@ -270,5 +273,14 @@ header nav ul li a:hover {
   width: 80%;
   text-align: center;
   margin: auto;
+}
+
+#modal .content .image {
+  overflow-y: scroll;
+}
+
+#modal .content .image img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
