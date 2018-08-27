@@ -99,16 +99,15 @@ const view = {
             workElem.className = `work wk${index}`;
             workElem.innerHTML = `
             <a href="">
-            <img src="" alt="" />
+            <img src="source/userImg.png" alt="" width="100" height="100" />
             </a>
             `;
-            workElem.onclick = (event) => {
+            work.appendChild(workElem);
+            workElem.querySelector('a').onclick = (event) => {
                 event.preventDefault();
                 let project = that.getProject(element);
-                work.appendChild(project);
-                project.style.display = 'block';
+                document.body.appendChild(project);
             };
-            work.appendChild(workElem);
         });
         return work;
     },
@@ -116,11 +115,11 @@ const view = {
     getProject: getProject = (projectReceive) => {
         const project = document.createElement('div');
         project.id = 'modal';
-        project.style.display = 'none';
+        project.style.display = 'block';
         project.innerHTML = `
         <div class="bg" style="position: fixed; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh"></div>
         <div class="content">
-            <button id="close" onclick="closeModal()">X</button>
+            <button id="close">X</button>
             <h1>${projectReceive.title}</h1>
             <div class="table">
                 <div class="col">
@@ -137,17 +136,17 @@ const view = {
             ${projectReceive.description}
             </p>
             <div class="image">
-                <img src="" alt="" width="500" height="500">
-                <img src="" alt="" width="500" height="500">
-                <img src="" alt="" width="500" height="500">
-                <img src="" alt="" width="500" height="500">
-                <img src="" alt="" width="500" height="500">
+                <img src="${projectReceive.images[0]}" alt="" width="500" height="500">
+                <img src="${projectReceive.images[1]}" alt="" width="500" height="500">
+                <img src="${projectReceive.images[2]}" alt="" width="500" height="500">
+                <img src="${projectReceive.images[3]}" alt="" width="500" height="500">
+                <img src="${projectReceive.images[4]}" alt="" width="500" height="500">
             </div>
         </div>
         `;
         project.querySelector('button').onclick = (event) => {
             event.preventDefault();
-            project.style.display = 'none';
+            project.remove();
         };
         return project;
     },
@@ -172,8 +171,6 @@ const view = {
         let skills = this.getSkills();
         let work = this.getWork(projects);
         let contact = this.getContact();
-        //let project = this.getProject();
-
 
         root.appendChild(header);
         root.appendChild(landing);
@@ -181,6 +178,5 @@ const view = {
         root.appendChild(skills);
         root.appendChild(work);
         root.appendChild(contact);
-        //root.appendChild(project);
     }
 }

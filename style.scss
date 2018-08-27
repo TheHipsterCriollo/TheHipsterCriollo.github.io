@@ -150,8 +150,6 @@ header {
     }
     .work {
         background: rgb(139, 94, 94);
-        width: 100px;
-        height: 100px;
     }
     .wk0 {
         position: absolute;
@@ -197,11 +195,15 @@ header {
     .content {
         height: auto;
         width: 80vw;
-        background: rgb(92, 180, 96);
+        background: rgb(170, 247, 174);
         position: fixed;
         top: 25px;
         left: calc((100vw / 2) - 614px);
         z-index: 3;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        overflow: hidden;
         #close {
             position: relative;
             left: calc(100% - 3%);
@@ -231,6 +233,10 @@ header {
             width: 80%;
             text-align: center;
             margin: auto;
+        }
+        .image {
+            display: flex;
+            flex-grow: 2;
         }
     }
 }

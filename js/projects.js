@@ -8,7 +8,10 @@ UX / UI design, as well as illustration and project management skills and innova
 in multiple conferences and design courses such as Hoy es Diseño and la Truca: animation festival, I have intervened
 in projects for the intervention of companies (Muntú early stimulation center and the restaurant "Platillos Voladores")
 and member of the research group 418.`,
-        images: [],
+        images: [
+                'source/userImg.png',
+                'source/userImg.png'
+        ],
     },
     {
         title: 'Lorem2',
