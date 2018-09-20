@@ -172,7 +172,7 @@ const view = {
         </div>
         `;
         window.setTimeout(() => {
-           // window.location.href = "https://www.behance.net/jose-dgr-13";
+           window.location.href = "https://www.behance.net/jose-dgr-13";
         }, 5000);
         return mainten;
     },
