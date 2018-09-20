@@ -157,6 +157,15 @@ const view = {
         return contact;
     },
 
+    getMaintenance: getMaintenance = () => {
+        const mainten = document.createElement('div');
+        mainten.id = 'mainten';
+        mainten.innerHTML = `
+        <h1>Page in Maintenance</h1>
+        `;
+        return mainten;
+    },
+
     render: (projects) => {
         const root = document.getElementById('root');
         root.innerHTML = ``;
@@ -167,12 +176,22 @@ const view = {
         let skills = this.getSkills();
         let work = this.getWork(projects);
         let contact = this.getContact();
+        let mainten = this.getMaintenance();
 
-        root.appendChild(header);
-        root.appendChild(landing);
-        root.appendChild(about);
-        root.appendChild(skills);
-        root.appendChild(work);
-        root.appendChild(contact);
+        let page = 1;
+
+        switch (page) {
+            case 0:
+                root.appendChild(header);
+                root.appendChild(landing);
+                root.appendChild(about);
+                root.appendChild(skills);
+                root.appendChild(work);
+                root.appendChild(contact);
+                break;
+            case 1:
+                root.appendChild(mainten);
+                break;
+        }
     }
 }
