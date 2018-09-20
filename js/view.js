@@ -161,8 +161,19 @@ const view = {
         const mainten = document.createElement('div');
         mainten.id = 'mainten';
         mainten.innerHTML = `
+        <div id='text'>
         <h1>Page in Maintenance</h1>
+        <h3>You will be redirected to Behance <br> for checking my job</h3></div>
+        <div id='floating'>
+        <div id='laptop' ><img src='source/portatil.png' height='500' />
+        <div class='shadow1'></div></div>
+        <div id='mobile' ><img src='source/Movil.png' height='400' />
+        <div class='shadow2'></div></div>
+        </div>
         `;
+        window.setTimeout(() => {
+           // window.location.href = "https://www.behance.net/jose-dgr-13";
+        }, 5000);
         return mainten;
     },
 

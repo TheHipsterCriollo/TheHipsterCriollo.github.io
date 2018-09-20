@@ -5,18 +5,22 @@ html {
 body {
     margin: 0;
     padding: 0;
+
     p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
     }
+
     h1 {
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: 800;
     }
+
     h3 {
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: 700;
     }
+
     div {
         margin: 0;
     }
@@ -25,6 +29,7 @@ body {
 header {
     // background: blue;
     height: 50px;
+
     #logo {
         position: absolute;
         width: 50px;
@@ -32,24 +37,29 @@ header {
         left: 50px;
         background: yellow;
     }
+
     nav {
         position: relative;
         left: calc((100vw / 2) - 305px);
         width: 610px;
+
         ul {
             margin: 0;
             position: relative;
+
             li {
                 display: inline-block;
                 margin: 15px;
                 font-family: 'Nanum Gothic', sans-serif;
                 font-weight: 400;
+
                 a {
                     box-sizing: border-box;
                     padding: 5px 10px;
                     color: red;
                     text-decoration: none;
                 }
+
                 a:hover {
                     color: yellow;
                     background: salmon;
@@ -71,6 +81,7 @@ header {
     bottom: 10px;
     left: calc((100vw / 2) - 400px);
     width: 800px;
+
     h3 {
         margin: 7px 0;
     }
@@ -82,6 +93,7 @@ header {
     background: cyan;
     top: 100vh;
     position: absolute;
+
     h1 {
         position: relative;
         top: 100px;
@@ -90,6 +102,7 @@ header {
         text-align: center;
         left: 200px;
     }
+
     p {
         position: relative;
         top: calc((100vh / 2) - 107px);
@@ -105,6 +118,7 @@ header {
     position: absolute;
     top: 200vh;
     display: flex;
+
     .skill {
         width: 350px;
         height: 180px;
@@ -112,14 +126,17 @@ header {
         box-sizing: border-box;
         text-align: center;
     }
+
     .sk1 {
         position: relative;
         top: calc(100vh - 300px);
     }
+
     .sk2 {
         position: relative;
         top: 100px;
     }
+
     .sk3 {
         position: relative;
         top: calc(100vh - 300px);
@@ -132,15 +149,18 @@ header {
     background: rgb(115, 158, 168);
     position: absolute;
     top: 300vh;
+
     .text {
         top: calc((100vh / 2) - 105px);
         position: relative;
         width: 700px;
         height: 210px;
         left: 150px;
+
         h1 {
             float: left;
         }
+
         h3 {
             width: 650px;
             height: auto;
@@ -148,34 +168,41 @@ header {
             float: right;
         }
     }
+
     .work {
         background: rgb(139, 94, 94);
     }
+
     .wk0 {
         position: absolute;
         top: 80px;
         left: 100px;
     }
+
     .wk1 {
         position: absolute;
         top: 200px;
         left: 600px;
     }
+
     .wk2 {
         position: absolute;
         top: 100px;
         left: 1050px;
     }
+
     .wk3 {
         position: absolute;
         top: 430px;
         left: 125px;
     }
+
     .wk4 {
         position: absolute;
         top: 400px;
         left: 1200px;
     }
+
     .wk5 {
         position: absolute;
         top: 520px;
@@ -204,42 +231,144 @@ header {
         box-sizing: border-box;
         overflow-y: scroll;
         overflow: hidden;
+
         #close {
             position: relative;
             left: calc(100% - 3%);
             top: 10px;
         }
+
         h1 {
             text-align: center;
             width: 80%;
             margin: 30px auto;
         }
+
         .table {
             display: flex;
             width: 60%;
             margin: auto;
+
             .col {
                 margin: 0 50px;
                 width: 33%;
                 padding: 5px;
                 box-sizing: border-box;
                 text-align: center;
+
                 h5 {
                     font-size: 1.5em;
                 }
             }
         }
+
         p {
             width: 80%;
             text-align: center;
             margin: auto;
         }
+
         .image {
             overflow-y: scroll;
+
             img {
                 width: 100%;
                 height: auto;
             }
         }
+    }
+}
+
+#mainten {
+    #text {
+        position: absolute;
+        left: calc((100vw / 2) - 200px);
+        top: 200px;
+    
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            letter-spacing: 8px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.5em;
+            letter-spacing: 4px;
+        }
+    }
+
+    #floating {
+        position: absolute;
+        width: 95vw;
+        left: 35px;
+        bottom: 50px;
+
+        #laptop {
+            float: left;
+
+            img {
+                transform: translatey(0px);
+                animation: float 6s ease-in-out infinite;
+            }
+
+            .shadow1 {
+                height: 30px;
+                width: 500px;
+                border-radius: 700px / 50px;
+                filter: blur(15px);
+                animation: shadow 6s ease-in-out infinite;
+                margin-left: 80px;
+            }
+        }
+
+        #mobile {
+            position: absolute;
+            bottom: 0px;
+            right: 50px;
+
+            img {
+                transform: translatey(0px);
+                animation: float 6s ease-in-out infinite;
+
+            }
+
+            .shadow2 {
+                height: 30px;
+                width: 120px;
+                border-radius: 400px / 50px;
+                filter: blur(15px);
+                animation: shadow 6s ease-in-out infinite;
+                margin-right: 80px;
+            }
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     }
 }
