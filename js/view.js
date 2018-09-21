@@ -185,9 +185,6 @@ const view = {
         </div>
         <img class='planet' src='source/planet.svg' style='position: absolute; width: 300px; height: 300px; z-index: -1; left: 60px; top: 30px; opacity: 0.5'>
         `;
-        window.setTimeout(() => {
-           // window.location.href = "https://www.behance.net/jose-dgr-13";
-        }, 5000);
         return mainten;
     },
 
