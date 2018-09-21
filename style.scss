@@ -284,7 +284,7 @@ header {
         position: absolute;
         left: calc((100vw / 2) - 200px);
         top: 200px;
-    
+        color: white;
         h1 {
             text-align: center;
             font-size: 3em;
@@ -296,6 +296,29 @@ header {
             font-size: 1.5em;
             letter-spacing: 4px;
         }
+
+        ul {
+            li {
+                display: inline-block;
+                margin: 20px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: Montserrat;                    
+                }
+                animation: floatText 1s ease-in infinite;    
+            }
+        }
+    }
+
+    #asteorids {
+        img {
+            animation: floatTwo 4s ease-in-out infinite;
+        }
+    }
+
+    .planet {
+        animation: floatTwo 5s ease-in-out infinite;
     }
 
     #floating {
@@ -352,6 +375,34 @@ header {
 
     50% {
         transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatTwo {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatText {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-5px);
     }
 
     100% {

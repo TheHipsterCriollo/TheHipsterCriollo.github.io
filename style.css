@@ -288,6 +288,7 @@ header nav ul li a:hover {
   position: absolute;
   left: calc((100vw / 2) - 200px);
   top: 200px;
+  color: white;
 }
 
 #mainten #text h1 {
@@ -300,6 +301,29 @@ header nav ul li a:hover {
   text-align: center;
   font-size: 1.5em;
   letter-spacing: 4px;
+}
+
+#mainten #text ul li {
+  display: inline-block;
+  margin: 20px;
+  -webkit-animation: floatText 1s ease-in infinite;
+          animation: floatText 1s ease-in infinite;
+}
+
+#mainten #text ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+#mainten #asteorids img {
+  -webkit-animation: floatTwo 4s ease-in-out infinite;
+          animation: floatTwo 4s ease-in-out infinite;
+}
+
+#mainten .planet {
+  -webkit-animation: floatTwo 5s ease-in-out infinite;
+          animation: floatTwo 5s ease-in-out infinite;
 }
 
 #mainten #floating {
@@ -378,6 +402,66 @@ header nav ul li a:hover {
   50% {
     -webkit-transform: translatey(-20px);
             transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes floatTwo {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes floatTwo {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes floatText {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-5px);
+            transform: translatey(-5px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes floatText {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-5px);
+            transform: translatey(-5px);
   }
   100% {
     -webkit-transform: translatey(0px);

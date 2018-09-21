@@ -161,18 +161,32 @@ const view = {
         const mainten = document.createElement('div');
         mainten.id = 'mainten';
         mainten.innerHTML = `
+        <img class='background' src='source/background.svg' style='position: absolute; z-index: -2; width: 100vw; bottom: 0; opacity: 0.6'>
+        <img class='header' src='source/header.svg' style='position: absolute; z-index: -1; width: 70vw; top: 220px; left: 350px'>
         <div id='text'>
         <h1>Page in Maintenance</h1>
-        <h3>You will be redirected to Behance <br> for checking my job</h3></div>
+        <h3>You will be redirected to Behance <br> for checking my job</h3>
+        <ul style='position: fixed; bottom: 20px'>
+        <li><a href='source/Files/CV-compressed.pdf'> Check my CV </a></li>
+        <li><a href='https://www.behance.net/jose-dgr-13'> Check my Behance </a></li>
+        <li><a href='www.linkedin.com/in/josedgr13'> Check my LinkedIn </a></li>
+        </ul>
+        </div>
         <div id='floating'>
         <div id='laptop' ><img src='source/portatil.png' height='500' />
         <div class='shadow1'></div></div>
         <div id='mobile' ><img src='source/Movil.png' height='400' />
         <div class='shadow2'></div></div>
         </div>
+        <div id='asteorids'>
+        <img src='source/asteroid.svg' style='position: absolute; width: 200px; height: 200px; z-index: 2; right: 40px; bottom: 60px'>
+        <img src='source/asteroid.svg' style='position: absolute; width: 140px; height: 140px; z-index: 1; right: 60px; bottom: 215px'>
+        <img src='source/asteroid.svg' style='position: absolute; width: 80px; height: 80px; z-index: -1; right: 255px; bottom: 200px'>
+        </div>
+        <img class='planet' src='source/planet.svg' style='position: absolute; width: 300px; height: 300px; z-index: -1; left: 60px; top: 30px; opacity: 0.5'>
         `;
         window.setTimeout(() => {
-           window.location.href = "https://www.behance.net/jose-dgr-13";
+           // window.location.href = "https://www.behance.net/jose-dgr-13";
         }, 5000);
         return mainten;
     },
