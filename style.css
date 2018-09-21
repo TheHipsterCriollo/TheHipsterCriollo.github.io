@@ -306,8 +306,6 @@ header nav ul li a:hover {
 #mainten #text ul li {
   display: inline-block;
   margin: 20px;
-  -webkit-animation: floatText 1s ease-in infinite;
-          animation: floatText 1s ease-in infinite;
 }
 
 #mainten #text ul li a {
