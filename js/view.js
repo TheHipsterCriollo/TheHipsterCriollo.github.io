@@ -165,11 +165,11 @@ const view = {
         <img class='header' src='source/header.svg' style='position: absolute; z-index: -1; width: 70vw; top: 220px; left: 350px'>
         <div id='text'>
         <h1>Page in Maintenance</h1>
-        <h3>You will be redirected to Behance <br> for checking my job</h3>
-        <ul style='position: fixed; bottom: 20px'>
+        <h3 style='position: relative; bottom: 15px'>We are improving the way you will see us</h3>
+        <ul style='position: absolute; bottom: -50px; z-index: 3'>
         <li><a href='source/Files/CV-compressed.pdf'> Check my CV </a></li>
         <li><a href='https://www.behance.net/jose-dgr-13'> Check my Behance </a></li>
-        <li><a href='www.linkedin.com/in/josedgr13'> Check my LinkedIn </a></li>
+        <li><a href='https://www.linkedin.com/in/josedgr13'> Check my LinkedIn </a></li>
         </ul>
         </div>
         <div id='floating'>

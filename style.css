@@ -299,13 +299,15 @@ header nav ul li a:hover {
 
 #mainten #text h3 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
   letter-spacing: 4px;
 }
 
 #mainten #text ul li {
   display: inline-block;
   margin: 20px;
+  -webkit-animation: floatText 2s ease-in infinite;
+          animation: floatText 2s ease-in infinite;
 }
 
 #mainten #text ul li a {
@@ -443,8 +445,8 @@ header nav ul li a:hover {
             transform: translatey(0px);
   }
   50% {
-    -webkit-transform: translatey(-5px);
-            transform: translatey(-5px);
+    -webkit-transform: translatey(-3px);
+            transform: translatey(-3px);
   }
   100% {
     -webkit-transform: translatey(0px);
@@ -458,8 +460,8 @@ header nav ul li a:hover {
             transform: translatey(0px);
   }
   50% {
-    -webkit-transform: translatey(-5px);
-            transform: translatey(-5px);
+    -webkit-transform: translatey(-3px);
+            transform: translatey(-3px);
   }
   100% {
     -webkit-transform: translatey(0px);
