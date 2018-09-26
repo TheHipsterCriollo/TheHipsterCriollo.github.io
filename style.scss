@@ -223,15 +223,12 @@ header {
         height: auto;
         width: 80vw;
         background: white;
-        position: fixed;
+        position: absolute;
         top: 25px;
-        left: calc((100vw / 2) - 614px);
+        left: calc((100vw / 2) - 805px);
         z-index: 3;
-        padding: 20px;
         box-sizing: border-box;
-        overflow-y: scroll;
-        overflow: hidden;
-
+        
         #close {
             position: relative;
             left: calc(100% - 3%);
@@ -269,8 +266,6 @@ header {
         }
 
         .image {
-            overflow-y: scroll;
-
             img {
                 width: 100%;
                 height: auto;
@@ -285,6 +280,7 @@ header {
         left: calc((100vw / 2) - 200px);
         top: 200px;
         color: white;
+
         h1 {
             text-align: center;
             font-size: 3em;
@@ -301,12 +297,14 @@ header {
             li {
                 display: inline-block;
                 margin: 20px;
-                a{
+
+                a {
                     text-decoration: none;
                     color: white;
-                    font-family: Montserrat;                    
+                    font-family: Montserrat;
                 }
-                animation: floatText 2s ease-in infinite;    
+
+                animation: floatText 2s ease-in infinite;
             }
         }
     }
@@ -366,6 +364,139 @@ header {
             }
         }
     }
+}
+
+#menu {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background: pink;
+}
+
+/*
+#mosaic {
+    width: 75%;
+    height: 100vh;
+    float: right;
+    background: salmon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .work {
+        display: flex;
+        flex: 1 1 auto;
+        width: 33.3%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        h3 {
+            display: none;
+            position: absolute;
+        }
+    }
+
+    .work:hover {
+        //opacity: 0.5;
+        h3 {
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+*/
+/*
+#mosaic {
+    width: 75%;
+    height: 100vh;
+    float: right;
+    background: salmon;
+
+    .image {
+        max-width: 100%;
+    }
+
+    img {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #mosaic {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+            .work {
+                width: 50%;
+            }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .work {
+        width: calc(100% / 3);
+    }
+}
+*/
+
+#mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: Nanum Gothic;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @keyframes float {

@@ -225,15 +225,12 @@ header nav ul li a:hover {
   height: auto;
   width: 80vw;
   background: white;
-  position: fixed;
+  position: absolute;
   top: 25px;
-  left: calc((100vw / 2) - 614px);
+  left: calc((100vw / 2) - 805px);
   z-index: 3;
-  padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-y: scroll;
-  overflow: hidden;
 }
 
 #modal .content #close {
@@ -273,10 +270,6 @@ header nav ul li a:hover {
   width: 80%;
   text-align: center;
   margin: auto;
-}
-
-#modal .content .image {
-  overflow-y: scroll;
 }
 
 #modal .content .image img {
@@ -377,6 +370,149 @@ header nav ul li a:hover {
   -webkit-animation: shadow 6s ease-in-out infinite;
           animation: shadow 6s ease-in-out infinite;
   margin-right: 80px;
+}
+
+#menu {
+  width: 25%;
+  height: 100vh;
+  float: left;
+  background: pink;
+}
+
+/*
+#mosaic {
+    width: 75%;
+    height: 100vh;
+    float: right;
+    background: salmon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .work {
+        display: flex;
+        flex: 1 1 auto;
+        width: 33.3%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        h3 {
+            display: none;
+            position: absolute;
+        }
+    }
+
+    .work:hover {
+        //opacity: 0.5;
+        h3 {
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+*/
+/*
+#mosaic {
+    width: 75%;
+    height: 100vh;
+    float: right;
+    background: salmon;
+
+    .image {
+        max-width: 100%;
+    }
+
+    img {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #mosaic {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+            .work {
+                width: 50%;
+            }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .work {
+        width: calc(100% / 3);
+    }
+}
+*/
+#mosaic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding-bottom: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 22rem;
+          flex: 1 0 22rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-item-info {
+  display: none;
+}
+
+.gallery-item-info li {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: Nanum Gothic;
+}
+
+.gallery-item-type {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @-webkit-keyframes float {

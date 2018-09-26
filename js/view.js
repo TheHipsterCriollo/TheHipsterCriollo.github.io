@@ -157,6 +157,43 @@ const view = {
         return contact;
     },
 
+    getMenu: getMenu = () => {
+        const menu = document.createElement('div');
+        menu.id = 'menu';
+        menu.innerHTML = `
+        
+        `;
+        return menu;
+    },
+
+    getMosaic: getMosaic = (projects) => {
+        const mosaic = document.createElement('div');
+        mosaic.id = 'mosaic';
+        const that = this;
+        projects.forEach((elem, index) => {
+            let workElem = document.createElement('div');
+            //workElem.className = `work wk${index}`;
+            workElem.className = `gallery-item`;
+            workElem.innerHTML = `
+            <!--<img src="${elem.images[0]}" alt="${elem.title}" class="image" />*-->
+
+				<img src="${elem.images[0]}" class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-comments">${elem.title}</li>
+					</ul>
+				</div>
+            `;
+            mosaic.appendChild(workElem);
+            workElem.querySelector('div').onclick = (event) => {
+                event.preventDefault();
+                let project = that.getProject(elem);
+                document.body.appendChild(project);
+            };
+        });        
+        return mosaic;
+    },
+
     getMaintenance: getMaintenance = () => {
         const mainten = document.createElement('div');
         mainten.id = 'mainten';
@@ -199,6 +236,8 @@ const view = {
         let work = this.getWork(projects);
         let contact = this.getContact();
         let mainten = this.getMaintenance();
+        let menu = this.getMenu();
+        let mosaic = this.getMosaic(projects);
 
         let page = 1;
 
@@ -213,6 +252,10 @@ const view = {
                 break;
             case 1:
                 root.appendChild(mainten);
+                break;
+            case 2:
+                root.appendChild(menu);
+                root.appendChild(mosaic);
                 break;
         }
     }
