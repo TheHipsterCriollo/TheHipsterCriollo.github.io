@@ -239,7 +239,7 @@ const view = {
         let menu = this.getMenu();
         let mosaic = this.getMosaic(projects);
 
-        let page = 1;
+        let page = 2;
 
         switch (page) {
             case 0:
