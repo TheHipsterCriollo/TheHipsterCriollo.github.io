@@ -4,7 +4,7 @@ const projects = [{
         type: 'Logo Design',
         date: 'July ',
         description: ``,
-        images: ['source/meridiano1.jpg', 'source/Meridiano.jpg'],
+        images: ['source/Covers/Meridiano_cover.png', 'source/Views/Meridiano.jpg'],
     },
     {
         title: 'Ruta Aprendizaje y TIC',
@@ -12,54 +12,54 @@ const projects = [{
         type: 'Branding and media content',
         date: 'July - August, 2018',
         description: ``,
-        images: ['source/TIC-Thumb.jpg', '']
+        images: ['source/Covers/TIC_cover.jpg', 'source/Views/TIC_view.png']
     },
     {
-        title: 'Lorem3',
-        client: 'Ipsum',
-        type: 'Web',
-        date: '00/00/00',
-        description: `I am a INTERACTIVE MEDIA DESIGN student at Icesi University. My areas of interest range from web development and
-UX / UI design, as well as illustration and project management skills and innovation analysis. I participated
-in multiple conferences and design courses such as Hoy es Diseño and la Truca: animation festival, I have intervened
-in projects for the intervention of companies (Muntú early stimulation center and the restaurant "Platillos Voladores")
-and member of the research group 418.`,
-        images: ['source/TIC-Thumb.jpg', '']
+        title: 'H2BOnsai',
+        client: 'Personal',
+        type: 'UX/UI',
+        date: 'February 2016',
+        description: ``,
+        images: ['source/Covers/H2BOsai_cover.png', 'source/Views/H2BOnsai.jpg']
     },
     {
-        title: 'Lorem3',
-        client: 'Ipsum',
-        type: 'Web',
-        date: '00/00/00',
-        description: `I am a INTERACTIVE MEDIA DESIGN student at Icesi University. My areas of interest range from web development and
-UX / UI design, as well as illustration and project management skills and innovation analysis. I participated
-in multiple conferences and design courses such as Hoy es Diseño and la Truca: animation festival, I have intervened
-in projects for the intervention of companies (Muntú early stimulation center and the restaurant "Platillos Voladores")
-and member of the research group 418.`,
-        images: ['source/TIC-Thumb.jpg', '']
+        title: 'DMI Logo',
+        client: 'Interactive Media Design',
+        type: 'branding',
+        date: 'September 2018',
+        description: `DMI stands for "Diseño de Medios Interactivos" (Interactive Media Design), it's a undergrade from Universidad Icesi`,
+        images: ['source/Covers/DMI_cover.png', 'source/Views/DMI-jpg']
     },
     {
-        title: 'Lorem3',
-        client: 'Ipsum',
-        type: 'Web',
-        date: '00/00/00',
-        description: `I am a INTERACTIVE MEDIA DESIGN student at Icesi University. My areas of interest range from web development and
-UX / UI design, as well as illustration and project management skills and innovation analysis. I participated
-in multiple conferences and design courses such as Hoy es Diseño and la Truca: animation festival, I have intervened
-in projects for the intervention of companies (Muntú early stimulation center and the restaurant "Platillos Voladores")
-and member of the research group 418.`,
-        images: ['source/TIC-Thumb.jpg', '']
+        title: 'Saturns: A social media for creatives',
+        client: 'Academic',
+        type: 'Web Design - UX/UI',
+        date: 'September 2017',
+        description: ``,
+        images: ['source/Covers/Saturns_cover.png', 'source/Views/Saturns_view.png']
     },
     {
-        title: 'Lorem3',
-        client: 'Ipsum',
-        type: 'Web',
-        date: '00/00/00',
-        description: `I am a INTERACTIVE MEDIA DESIGN student at Icesi University. My areas of interest range from web development and
-UX / UI design, as well as illustration and project management skills and innovation analysis. I participated
-in multiple conferences and design courses such as Hoy es Diseño and la Truca: animation festival, I have intervened
-in projects for the intervention of companies (Muntú early stimulation center and the restaurant "Platillos Voladores")
-and member of the research group 418.`,
-        images: ['source/TIC-Thumb.jpg', '']
+        title: 'Crescendo: A Spotify Search Plugin',
+        client: 'Academic',
+        type: 'Web Design - UX/UI',
+        date: 'August 2017',
+        description: ``,
+        images: ['source/Covers/Crescendo_cover.png', 'source/Views/Crescendo.png']
+    },
+    {
+        title: 'Feather',
+        client: 'Academic',
+        type: 'Logo',
+        date: 'March 2015',
+        description: ``,
+        images: ['source/Covers/feather_cover.png', 'source/Views/Feather.jpg']
+    },
+    {
+        title: 'Kometsubu',
+        client: 'Academic',
+        type: 'Logo',
+        date: 'April 2015',
+        description: ``,
+        images: ['source/Covers/kometsubu_cover.png', 'source/Views/Kometsubu.jpg']
     },
 ];

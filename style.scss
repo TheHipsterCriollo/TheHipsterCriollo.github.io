@@ -26,49 +26,6 @@ body {
     }
 }
 
-header {
-    // background: blue;
-    height: 50px;
-
-    #logo {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        left: 50px;
-        background: yellow;
-    }
-
-    nav {
-        position: relative;
-        left: calc((100vw / 2) - 305px);
-        width: 610px;
-
-        ul {
-            margin: 0;
-            position: relative;
-
-            li {
-                display: inline-block;
-                margin: 15px;
-                font-family: 'Nanum Gothic', sans-serif;
-                font-weight: 400;
-
-                a {
-                    box-sizing: border-box;
-                    padding: 5px 10px;
-                    color: red;
-                    text-decoration: none;
-                }
-
-                a:hover {
-                    color: yellow;
-                    background: salmon;
-                }
-            }
-        }
-    }
-}
-
 #landing {
     width: 100%;
     height: calc(100vh - 175px);
@@ -91,7 +48,6 @@ header {
     height: 100vh;
     width: 100%;
     background: cyan;
-    top: 100vh;
     position: absolute;
 
     h1 {
@@ -142,74 +98,7 @@ header {
         top: calc(100vh - 300px);
     }
 }
-/*
-#work {
-    height: 100vh;
-    width: 100%;
-    background: rgb(115, 158, 168);
-    position: absolute;
-    top: 300vh;
 
-    .text {
-        top: calc((100vh / 2) - 105px);
-        position: relative;
-        width: 700px;
-        height: 210px;
-        left: 150px;
-
-        h1 {
-            float: left;
-        }
-
-        h3 {
-            width: 650px;
-            height: auto;
-            text-align: center;
-            float: right;
-        }
-    }
-
-    .work {
-        background: rgb(139, 94, 94);
-    }
-
-    .wk0 {
-        position: absolute;
-        top: 80px;
-        left: 100px;
-    }
-
-    .wk1 {
-        position: absolute;
-        top: 200px;
-        left: 600px;
-    }
-
-    .wk2 {
-        position: absolute;
-        top: 100px;
-        left: 1050px;
-    }
-
-    .wk3 {
-        position: absolute;
-        top: 430px;
-        left: 125px;
-    }
-
-    .wk4 {
-        position: absolute;
-        top: 400px;
-        left: 1200px;
-    }
-
-    .wk5 {
-        position: absolute;
-        top: 520px;
-        left: 600px;
-    }
-}
-*/
 #contact {
     height: 100vh;
     width: 100%;
@@ -228,11 +117,12 @@ header {
         left: calc((100vw / 2) - 805px);
         z-index: 3;
         box-sizing: border-box;
-        
+
         #close {
             position: relative;
             left: calc(100% - 3%);
             top: 10px;
+            cursor: pointer;
         }
 
         h1 {
@@ -272,6 +162,14 @@ header {
             }
         }
     }
+}
+
+
+#menu {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background: white;
 }
 
 #mainten {
@@ -366,86 +264,98 @@ header {
     }
 }
 
-#menu {
-    width: 25%;
-    height: 100vh;
-    float: left;
-    background: pink;
-}
+//----NEW PAGE-----
 
-/*
-#mosaic {
-    width: 75%;
-    height: 100vh;
-    float: right;
-    background: salmon;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .work {
-        display: flex;
-        flex: 1 1 auto;
-        width: 33.3%;
+#home {
+    .images {
+        width: 513px;
+        height: 155px;
+        position: relative;
+        right: 85px;
 
         img {
-            width: 100%;
-            height: 100%;
+            position: relative;
+            top: 40px;
+            left: calc((100% / 2) - 75px);
+            width: 150px;
+            height: 150px;
+            clip-path: circle();
+            //box-shadow: 0px 15px 50px -5px rgba(0,0,0,0.4);
+        }
+    }
+
+    nav {
+        margin-top: 150px;
+
+        ul {
+            margin-left: 40px;
+
+            li {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                list-style-type: none;
+
+                a {
+                    font-family: 'Nanum Gothic', sans-serif;
+                    font-size: 3em;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#infoModal {
+    .content {
+        height: 70vh;
+        width: 80vw;
+        background: white;
+        position: absolute;
+        top: calc((100vh / 2) - 35vh);
+        left: calc((100vw / 2) - 805px);
+        z-index: 3;
+        box-sizing: border-box;
+
+        #close {
+            position: relative;
+            left: calc(100% - 3%);
+            top: 10px;
             cursor: pointer;
         }
 
+        .text {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            position: relative;
+            top: -15px;
+            left: 180px;
+        }
+
         h3 {
-            display: none;
-            position: absolute;
+            font-size: 1.7em;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: Montserrat;
         }
     }
-
-    .work:hover {
-        //opacity: 0.5;
-        h3 {
-            display: flex;
-            color: white;
-            justify-content: center;
-            align-items: center;
-        }
-    }
 }
-*/
-/*
-#mosaic {
-    width: 75%;
-    height: 100vh;
-    float: right;
-    background: salmon;
-
-    .image {
-        max-width: 100%;
-    }
-
-    img {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    #mosaic {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-            .work {
-                width: 50%;
-            }
-
-}
-
-@media screen and (min-width: 1000px) {
-    .work {
-        width: calc(100% / 3);
-    }
-}
-*/
 
 #mosaic {
     display: flex;
@@ -454,14 +364,13 @@ header {
     width: 75vw;
     overflow: hidden;
     float: right;
-    z-index: 2;
     position: absolute;
     right: 0;
 }
 
 .gallery-item {
     position: relative;
-    flex: 1 0;
+    flex: 1 0 25%;
     color: #fff;
     cursor: pointer;
 }

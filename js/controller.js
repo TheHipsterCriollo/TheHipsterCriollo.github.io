@@ -1,6 +1,6 @@
-const controller = (projects) => {
-    view.render(projects);
+const controller = (projects, info) => {
+    view.render(projects, info);
 
 }
 
-controller(projects);
+controller(projects, info);
