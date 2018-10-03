@@ -47,7 +47,7 @@ const view = {
         const infoModal = document.createElement('div');
         infoModal.id = 'infoModal';
         infoModal.innerHTML = `
-        <div class="bg" style="position: fixed; z-index: 3; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh"></div>
+        <div class="bg" style="position: fixed; z-index: 5; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh"></div>
         <div class='content'>
         <span id="close" style="font-family: Gotham; font-size: 2.5em">X</span>
         <h1>${info.title}</h1>

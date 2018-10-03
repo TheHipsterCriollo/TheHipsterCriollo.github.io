@@ -28,7 +28,7 @@ const projects = [{
         type: 'branding',
         date: 'September 2018',
         description: `DMI stands for "Diseño de Medios Interactivos" (Interactive Media Design), it's a undergrade from Universidad Icesi`,
-        images: ['source/Covers/DMI_cover.png', 'source/Views/DMI-jpg']
+        images: ['source/Covers/DMI_cover.png', 'source/Views/DMI.jpg']
     },
     {
         title: 'Saturns: A social media for creatives',
