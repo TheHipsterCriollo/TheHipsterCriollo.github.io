@@ -268,6 +268,7 @@ body {
 
 #home {
     height: 100%;
+
     .images {
         width: 513px;
         height: 155px;
@@ -286,20 +287,23 @@ body {
     }
 
     nav {
-        margin-top: 150px;
-
+        position: relative;
+        width: 200px;
+        top: calc((100% / 2) - 280px);
+        left: 50px;
+        z-index: 5;
         ul {
             margin-left: 40px;
 
             li {
-                margin-top: 40px;
-                margin-bottom: 40px;
+                margin: 30px auto;
                 list-style-type: none;
 
                 a {
                     font-family: 'Nanum Gothic', sans-serif;
-                    font-size: 3em;
+                    font-size: 2em;
                     text-decoration: none;
+                    text-align: left;
                     color: black;
                 }
 
