@@ -26,154 +26,6 @@ body div {
   margin: 0;
 }
 
-#landing {
-  width: 100%;
-  height: calc(100vh - 175px);
-  position: relative;
-  background: darkcyan;
-}
-
-.landingFoot {
-  position: absolute;
-  bottom: 10px;
-  left: calc((100vw / 2) - 400px);
-  width: 800px;
-}
-
-.landingFoot h3 {
-  margin: 7px 0;
-}
-
-#about {
-  height: 100vh;
-  width: 100%;
-  background: cyan;
-  position: absolute;
-}
-
-#about h1 {
-  position: relative;
-  top: 100px;
-  width: 300px;
-  height: 50px;
-  text-align: center;
-  left: 200px;
-}
-
-#about p {
-  position: relative;
-  top: calc((100vh / 2) - 107px);
-  width: 700px;
-  left: 650px;
-  text-align: center;
-}
-
-#skills {
-  height: 100vh;
-  background: plum;
-  position: absolute;
-  top: 200vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#skills .skill {
-  width: 350px;
-  height: 180px;
-  margin: 0 78px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-}
-
-#skills .sk1 {
-  position: relative;
-  top: calc(100vh - 300px);
-}
-
-#skills .sk2 {
-  position: relative;
-  top: 100px;
-}
-
-#skills .sk3 {
-  position: relative;
-  top: calc(100vh - 300px);
-}
-
-#contact {
-  height: 100vh;
-  width: 100%;
-  background: #7e5cb4;
-  position: absolute;
-  top: 400vh;
-}
-
-#modal .content {
-  height: auto;
-  width: 80vw;
-  background: white;
-  position: absolute;
-  top: 25px;
-  left: calc((100vw / 2) - 805px);
-  z-index: 3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#modal .content #close {
-  position: relative;
-  left: calc(100% - 3%);
-  top: 10px;
-  cursor: pointer;
-}
-
-#modal .content h1 {
-  text-align: center;
-  width: 80%;
-  margin: 30px auto;
-}
-
-#modal .content .table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%;
-  margin: auto;
-}
-
-#modal .content .table .col {
-  margin: 0 50px;
-  width: 33%;
-  padding: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-}
-
-#modal .content .table .col h5 {
-  font-size: 1.5em;
-}
-
-#modal .content p {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
-
-#modal .content .image img {
-  width: 100%;
-  height: auto;
-}
-
-#menu {
-  width: 25%;
-  height: 100vh;
-  float: left;
-  background: white;
-}
-
 #mainten #text {
   position: absolute;
   left: calc((100vw / 2) - 200px);
@@ -320,12 +172,12 @@ body div {
 }
 
 #infoModal .content {
-  height: 70vh;
-  width: 80vw;
+  height: 90%;
+  width: 80%;
   background: white;
   position: absolute;
-  top: calc((100vh / 2) - 35vh);
-  left: calc((100vw / 2) - 400px);
+  top: 3%;
+  left: 10%;
   z-index: 11;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -352,11 +204,11 @@ body div {
 }
 
 #infoModal .content h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 #infoModal .content p {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #infoModal .content a {
@@ -430,6 +282,63 @@ body div {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#modal .content {
+  height: auto;
+  width: 80vw;
+  background: white;
+  position: absolute;
+  top: 25px;
+  left: 10%;
+  z-index: 3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#modal .content #close {
+  position: relative;
+  left: calc(100% - 3%);
+  top: 10px;
+  cursor: pointer;
+}
+
+#modal .content h1 {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+#modal .content .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+
+#modal .content .table .col {
+  margin: 0 50px;
+  width: 33%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+#modal .content .table .col h5 {
+  font-size: 1.5em;
+}
+
+#modal .content p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+#modal .content .image img {
+  width: 100%;
+  height: auto;
 }
 
 @-webkit-keyframes float {

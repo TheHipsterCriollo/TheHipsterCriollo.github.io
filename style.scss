@@ -26,152 +26,6 @@ body {
     }
 }
 
-#landing {
-    width: 100%;
-    height: calc(100vh - 175px);
-    position: relative;
-    background: darkcyan;
-}
-
-.landingFoot {
-    position: absolute;
-    bottom: 10px;
-    left: calc((100vw / 2) - 400px);
-    width: 800px;
-
-    h3 {
-        margin: 7px 0;
-    }
-}
-
-#about {
-    height: 100vh;
-    width: 100%;
-    background: cyan;
-    position: absolute;
-
-    h1 {
-        position: relative;
-        top: 100px;
-        width: 300px;
-        height: 50px;
-        text-align: center;
-        left: 200px;
-    }
-
-    p {
-        position: relative;
-        top: calc((100vh / 2) - 107px);
-        width: 700px;
-        left: 650px;
-        text-align: center;
-    }
-}
-
-#skills {
-    height: 100vh;
-    background: plum;
-    position: absolute;
-    top: 200vh;
-    display: flex;
-
-    .skill {
-        width: 350px;
-        height: 180px;
-        margin: 0 78px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .sk1 {
-        position: relative;
-        top: calc(100vh - 300px);
-    }
-
-    .sk2 {
-        position: relative;
-        top: 100px;
-    }
-
-    .sk3 {
-        position: relative;
-        top: calc(100vh - 300px);
-    }
-}
-
-#contact {
-    height: 100vh;
-    width: 100%;
-    background: rgb(126, 92, 180);
-    position: absolute;
-    top: 400vh;
-}
-
-#modal {
-    .content {
-        height: auto;
-        width: 80vw;
-        background: white;
-        position: absolute;
-        top: 25px;
-        left: calc((100vw / 2) - 805px);
-        z-index: 3;
-        box-sizing: border-box;
-
-        #close {
-            position: relative;
-            left: calc(100% - 3%);
-            top: 10px;
-            cursor: pointer;
-        }
-
-        h1 {
-            text-align: center;
-            width: 80%;
-            margin: 30px auto;
-        }
-
-        .table {
-            display: flex;
-            width: 60%;
-            margin: auto;
-
-            .col {
-                margin: 0 50px;
-                width: 33%;
-                padding: 5px;
-                box-sizing: border-box;
-                text-align: center;
-
-                h5 {
-                    font-size: 1.5em;
-                }
-            }
-        }
-
-        p {
-            width: 80%;
-            text-align: center;
-            margin: auto;
-        }
-
-        .image {
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
-}
-
-
-#menu {
-    width: 25%;
-    height: 100vh;
-    float: left;
-    background: white;
-}
-
 #mainten {
     #text {
         position: absolute;
@@ -317,19 +171,21 @@ body {
 
 #infoModal {
     .content {
-        height: 70vh;
-        width: 80vw;
+        height: 90%;
+        width: 80%;
         background: white;
         position: absolute;
-        top: calc((100vh / 2) - 35vh);
-        left: calc((100vw / 2) - 400px);
+        top: 3%;
+        left: 10%;
         z-index: 11;
         box-sizing: border-box;
 
         #close {
+            font-family: Gotham;
+            font-size: 2.5em
             position: relative;
             left: calc(100% - 3%);
-            top: 10px;
+            top: 3%;
             cursor: pointer;
         }
 
@@ -347,11 +203,11 @@ body {
         }
 
         h3 {
-            font-size: 1.7em;
+            font-size: 1.5em;
         }
 
         p {
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
 
         a {
@@ -416,6 +272,65 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#modal {
+    .content {
+        height: auto;
+        width: 80vw;
+        background: white;
+        position: absolute;
+        top: 25px;
+        left: 10%;
+        z-index: 3;
+        box-sizing: border-box;
+
+        #close {
+            font-family: Gotham;
+            font-size: 2.5em;
+            position: relative;
+            left: calc(100% - 3%);
+            top: 3%;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .table {
+            display: flex;
+            width: 60%;
+            margin: auto;
+
+            .col {
+                margin: 0 50px;
+                width: 33%;
+                padding: 5px;
+                box-sizing: border-box;
+                text-align: center;
+
+                h5 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        p {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
 
 @keyframes float {
