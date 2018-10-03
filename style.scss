@@ -121,7 +121,7 @@ body {
 //----NEW PAGE-----
 
 #menu {
-    width: 24vw;
+    width: 25%;
 #home {
     height: 100%;
         .images {
@@ -172,60 +172,11 @@ body {
     }
 }
 
-#infoModal {
-    .content {
-        height: 90%;
-        width: 80%;
-        background: white;
-        position: absolute;
-        top: 3%;
-        left: 10%;
-        z-index: 11;
-        box-sizing: border-box;
-
-        #close {
-            font-family: Gotham;
-            font-size: 2.5em;
-            position: relative;
-            left: calc(100% - 3%);
-            top: 3%;
-            cursor: pointer;
-        }
-
-        .text {
-            width: 80%;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 2em;
-            position: relative;
-            top: -15px;
-            left: 180px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-        }
-
-        p {
-            font-size: 1.3em;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            font-family: Montserrat;
-        }
-    }
-}
-
 #mosaic {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    width: 75vw;
+    width: 75%;
     overflow: hidden;
     float: right;
     position: absolute;
@@ -275,6 +226,55 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#infoModal {
+    .content {
+        height: 90%;
+        width: 80%;
+        background: white;
+        position: absolute;
+        top: 3%;
+        left: 10%;
+        z-index: 11;
+        box-sizing: border-box;
+
+        #close {
+            font-family: Gotham;
+            font-size: 2.5em;
+            position: relative;
+            left: calc(100% - 3%);
+            top: 3%;
+            cursor: pointer;
+        }
+
+        .text {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            position: relative;
+            top: -15px;
+            left: 180px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: Montserrat;
+        }
+    }
 }
 
 #modal {

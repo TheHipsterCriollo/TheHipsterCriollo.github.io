@@ -122,7 +122,7 @@ body div {
 }
 
 #menu {
-  width: 24vw;
+  width: 25%;
 }
 
 #menu #home {
@@ -175,54 +175,6 @@ body div {
   text-decoration: underline;
 }
 
-#infoModal .content {
-  height: 90%;
-  width: 80%;
-  background: white;
-  position: absolute;
-  top: 3%;
-  left: 10%;
-  z-index: 11;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#infoModal .content #close {
-  font-family: Gotham;
-  font-size: 2.5em;
-  position: relative;
-  left: calc(100% - 3%);
-  top: 3%;
-  cursor: pointer;
-}
-
-#infoModal .content .text {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-#infoModal .content h1 {
-  font-size: 2em;
-  position: relative;
-  top: -15px;
-  left: 180px;
-}
-
-#infoModal .content h3 {
-  font-size: 1.5em;
-}
-
-#infoModal .content p {
-  font-size: 1.3em;
-}
-
-#infoModal .content a {
-  text-decoration: none;
-  color: black;
-  font-family: Montserrat;
-}
-
 #mosaic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,7 +182,7 @@ body div {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100vh;
-  width: 75vw;
+  width: 75%;
   overflow: hidden;
   float: right;
   position: absolute;
@@ -288,6 +240,54 @@ body div {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#infoModal .content {
+  height: 90%;
+  width: 80%;
+  background: white;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  z-index: 11;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#infoModal .content #close {
+  font-family: Gotham;
+  font-size: 2.5em;
+  position: relative;
+  left: calc(100% - 3%);
+  top: 3%;
+  cursor: pointer;
+}
+
+#infoModal .content .text {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#infoModal .content h1 {
+  font-size: 2em;
+  position: relative;
+  top: -15px;
+  left: 180px;
+}
+
+#infoModal .content h3 {
+  font-size: 1.5em;
+}
+
+#infoModal .content p {
+  font-size: 1.3em;
+}
+
+#infoModal .content a {
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
 }
 
 #modal .content {
