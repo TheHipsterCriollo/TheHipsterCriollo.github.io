@@ -32,6 +32,8 @@ const info = [{
         <li><h3><a href='https://www.facebook.com/jose.gomez.1327'> Facebook </a></h3></li>
         <li><h3><a href='https://www.behance.net/jose-dgr-13'> Check my Behance </a></h3></li>
         <li><h3><a href='https://www.linkedin.com/in/josedgr13'> Check my LinkedIn </a></h3></li>
+        <li><h3><a href='https://bitbucket.org/jose-dgr-13/'> Check my Bitbucket </a></h3></li>
+        <li><h3><a href='https://github.com/TheHipsterCriollo'> Check my Github </a></h3></li>
         <li><h3><a href='source/Files/CV-compressed.pdf'> Download my CV </a></h3></li>
         </ul>
         </div>`
