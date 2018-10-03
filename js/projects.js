@@ -60,6 +60,6 @@ const projects = [{
         type: 'Logo',
         date: 'April 2015',
         description: ``,
-        images: ['source/Covers/kometsubu_cover.png', 'source/Views/Kometsubu.jpg']
+        images: ['source/Covers/Kometsubu_cover.png', 'source/Views/Kometsubu.jpg']
     },
 ];
