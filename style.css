@@ -269,11 +269,15 @@ body div {
   margin-right: 80px;
 }
 
+#home {
+  height: 100%;
+}
+
 #home .images {
   width: 513px;
   height: 155px;
   position: relative;
-  right: 85px;
+  right: 165px;
 }
 
 #home .images img {

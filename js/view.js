@@ -22,7 +22,7 @@ const view = {
                 </li>
             </ul>
         </nav>
-        <img class='planet' src='source/Page_Rsc/planet.svg' style='position: relative;width: 250px;height: 250px;z-index: 1;left: 20px;bottom: -100px;opacity: 0.5; animation: floatTwo 5s ease-in-out infinite;'>
+        <img class='planet' src='source/Page_Rsc/planet.svg' style='position: relative;width: 60%;/* height: 250px; */z-index: 1;left: 20px;top: -100px;opacity: 0.5;animation: floatTwo 5s ease-in-out infinite;'>
         `;
         var that = this;
         header.querySelectorAll('a')[0].addEventListener('click', (event) => {
