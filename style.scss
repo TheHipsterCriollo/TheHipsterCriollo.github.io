@@ -120,49 +120,52 @@ body {
 
 //----NEW PAGE-----
 
+#menu {
+    width: 30vw;
 #home {
     height: 100%;
-
-    .images {
-        width: 513px;
-        height: 155px;
-        position: relative;
-        right: 165px;
-
-        img {
+        .images {
+            width: 513px;
+            height: 155px;
             position: relative;
-            top: 40px;
-            left: calc((100% / 2) - 75px);
-            width: 150px;
-            height: 150px;
-            clip-path: circle();
-            //box-shadow: 0px 15px 50px -5px rgba(0,0,0,0.4);
+            right: 165px;
+
+            img {
+                position: relative;
+                top: 40px;
+                left: calc((100% / 2) - 75px);
+                width: 150px;
+                height: 150px;
+                clip-path: circle();
+                //box-shadow: 0px 15px 50px -5px rgba(0,0,0,0.4);
+            }
         }
-    }
 
-    nav {
-        position: relative;
-        width: 200px;
-        top: calc((100% / 2) - 280px);
-        left: 50px;
-        z-index: 5;
-        ul {
-            margin-left: 40px;
+        nav {
+            position: relative;
+            width: 200px;
+            top: calc((100% / 2) - 280px);
+            left: 50px;
+            z-index: 5;
 
-            li {
-                margin: 30px auto;
-                list-style-type: none;
+            ul {
+                margin-left: 40px;
 
-                a {
-                    font-family: 'Nanum Gothic', sans-serif;
-                    font-size: 2em;
-                    text-decoration: none;
-                    text-align: left;
-                    color: black;
-                }
+                li {
+                    margin: 30px auto;
+                    list-style-type: none;
 
-                a:hover {
-                    text-decoration: underline;
+                    a {
+                        font-family: 'Nanum Gothic', sans-serif;
+                        font-size: 2em;
+                        text-decoration: none;
+                        text-align: left;
+                        color: black;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -182,7 +185,7 @@ body {
 
         #close {
             font-family: Gotham;
-            font-size: 2.5em
+            font-size: 2.5em;
             position: relative;
             left: calc(100% - 3%);
             top: 3%;

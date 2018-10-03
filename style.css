@@ -121,18 +121,22 @@ body div {
   margin-right: 80px;
 }
 
-#home {
+#menu {
+  width: 30vw;
+}
+
+#menu #home {
   height: 100%;
 }
 
-#home .images {
+#menu #home .images {
   width: 513px;
   height: 155px;
   position: relative;
   right: 165px;
 }
 
-#home .images img {
+#menu #home .images img {
   position: relative;
   top: 40px;
   left: calc((100% / 2) - 75px);
@@ -142,7 +146,7 @@ body div {
           clip-path: circle();
 }
 
-#home nav {
+#menu #home nav {
   position: relative;
   width: 200px;
   top: calc((100% / 2) - 280px);
@@ -150,16 +154,16 @@ body div {
   z-index: 5;
 }
 
-#home nav ul {
+#menu #home nav ul {
   margin-left: 40px;
 }
 
-#home nav ul li {
+#menu #home nav ul li {
   margin: 30px auto;
   list-style-type: none;
 }
 
-#home nav ul li a {
+#menu #home nav ul li a {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 2em;
   text-decoration: none;
@@ -167,7 +171,7 @@ body div {
   color: black;
 }
 
-#home nav ul li a:hover {
+#menu #home nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -184,9 +188,11 @@ body div {
 }
 
 #infoModal .content #close {
+  font-family: Gotham;
+  font-size: 2.5em;
   position: relative;
   left: calc(100% - 3%);
-  top: 10px;
+  top: 3%;
   cursor: pointer;
 }
 
@@ -297,9 +303,11 @@ body div {
 }
 
 #modal .content #close {
+  font-family: Gotham;
+  font-size: 2.5em;
   position: relative;
   left: calc(100% - 3%);
-  top: 10px;
+  top: 3%;
   cursor: pointer;
 }
 
