@@ -325,8 +325,8 @@ body div {
   background: white;
   position: absolute;
   top: calc((100vh / 2) - 35vh);
-  left: calc((100vw / 2) - 805px);
-  z-index: 6;
+  left: calc((100vw / 2) - 400px);
+  z-index: 11;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
