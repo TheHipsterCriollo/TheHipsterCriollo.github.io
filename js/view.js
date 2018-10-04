@@ -4,10 +4,10 @@ const view = {
         header.id = 'home';
         header.innerHTML = `
         <div class='images'>
-        <img src='source/Page_Rsc/asteroid.svg' style='position: relative;width: 80px;height: 80px;z-index: 1;left: 220px;top: -15px;animation: floatTwo 4s ease-in-out infinite;'>
+        <img src='source/Page_Rsc/asteroid.svg' style='position: absolute;width: 15%; z-index: -1;left: 20%;top: 55%;animation: floatTwo 4s ease-in-out infinite;'>
         <img id="logo" src="source/Page_Rsc/photo.jpg" alt="">
-        <img src='source/Page_Rsc/asteroid.svg' style='position: relative;width: 120px;height: 120px;z-index: 2;left: 130px;top: 60px;animation: floatTwo 4s ease-in-out infinite;'>
-        <img src='source/Page_Rsc/asteroid.svg' style='position: relative;width: 60px;height: 60px;z-index: 1;left: 100px;top: 20px;animation: floatTwo 4s ease-in-out infinite;'>
+        <img src='source/Page_Rsc/asteroid.svg' style='position: absolute;width: 25%; z-index: 2;right: 28%;top: 55%;animation: floatTwo 4s ease-in-out infinite;'>
+        <img src='source/Page_Rsc/asteroid.svg' style='position: absolute;width: 20%; z-index: 3;right: 15%;top: 50%;animation: floatTwo 4s ease-in-out infinite;'>
         </div>
         <nav>
             <ul>
@@ -22,7 +22,7 @@ const view = {
                 </li>
             </ul>
         </nav>
-        <img class='planet' src='source/Page_Rsc/planet.svg' style='position: relative;width: 15%; z-index: 1;left: 20px;bottom: -85px;opacity: 0.5;animation: floatTwo 5s ease-in-out infinite;'>
+        <img class='planet' src='source/Page_Rsc/planet.svg' style='position: absolute;width: 15%;z-index: 1;left: 2%;bottom: 5%;opacity: 0.5;animation: floatTwo 5s ease-in-out infinite;'>
         `;
         var that = this;
         header.querySelectorAll('a')[0].addEventListener('click', (event) => {
@@ -136,8 +136,6 @@ const view = {
             //workElem.className = `work wk${index}`;
             workElem.className = `gallery-item`;
             workElem.innerHTML = `
-            <!--<img src="${elem.images[0]}" alt="${elem.title}" class="image" />*-->
-
 				<img src="${elem.images[0]}" class="gallery-image" alt="">
 				<div class="gallery-item-info">
 					<ul>
