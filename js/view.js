@@ -47,7 +47,7 @@ const view = {
         const infoModal = document.createElement('div');
         infoModal.id = 'infoModal';
         infoModal.innerHTML = `
-        <div class="bg" style="position: fixed;top: 0;left: 0;background: black;opacity: 0.6;width: 100vw;height: 100vh;z-index: 5;"></div>
+        <div class="bg" style="position: fixed;top: 0;left: 0;background: black;opacity: 0.6;width: 100vw;height: 100vh;z-index: 9;"></div>
         <div class='content'>
         <span id="close">X</span>
         <h1>${info.title}</h1>
@@ -89,7 +89,7 @@ const view = {
         project.id = 'modal';
         project.style.display = 'block';
         project.innerHTML = `
-        <div class="bg" style="position: fixed; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh"></div>
+        <div class="bg" style="position: fixed; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh; z-index: 9"></div>
         <div class="content">
             <span id="close">X</span>
             <h1 style="font-size: 3em">${projectReceive.title}</h1>
@@ -157,7 +157,7 @@ const view = {
         const mainten = document.createElement('div');
         mainten.id = 'mainten';
         mainten.innerHTML = `
-        <img class='background' src='source/Page_Rsc/background.svg' style='position: absolute; z-index: -2; width: 100vw; bottom: 0; opacity: 0.6'>
+        <img class='background' src='source/Page_Rsc/background.svg' style='position: absolute; z-index: 9; width: 100vw; bottom: 0; opacity: 0.6'>
         <img class='header' src='source/Page_Rsc/header.svg' style='position: absolute; z-index: -1; width: 70vw; top: 220px; left: 350px'>
         <div id='text'>
         <h1>Page in Maintenance</h1>
