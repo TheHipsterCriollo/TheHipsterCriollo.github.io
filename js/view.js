@@ -89,7 +89,7 @@ const view = {
         project.id = 'modal';
         project.style.display = 'block';
         project.innerHTML = `
-        <div class="bg" style="position: fixed; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh; z-index: 9"></div>
+        <div class="bg" style="position: fixed; top: 0; left: 0; background: black; opacity: 0.6; width: 100vw; height: 100vh; z-index: 9;"></div>
         <div class="content">
             <span id="close">X</span>
             <h1 style="font-size: 3em">${projectReceive.title}</h1>
